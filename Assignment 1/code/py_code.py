@@ -67,4 +67,11 @@ plt.annotate("E",(3.25,5))
 plt.annotate("120",(5.9,0.3))
 plt.annotate("D",(0.6,10.3))
 plt.show()
-
+print("1. Draw a line segment AB of length 6.5 cm.\n"
+      "2. Draw a line segment emerging from B at angle 120 in anticlockwise direction from BA of length 5 cm.\n"
+      "3. Name the other endpoint of the line segment as C.\n"
+      "4. Join AC. This completes the traingle ABC.\n"
+      "5. Now take the perpendicular bisector of any two sides, mark their point of intersection as E(centre of circumcircle).\n"
+      "6. Taking E as centre and EA=EB=EC as radius draw a circle(circumcircle).\n"
+      "7. Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\n"
+      "8. Join AD and CD.")
