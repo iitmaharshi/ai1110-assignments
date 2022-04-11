@@ -78,10 +78,10 @@ for i, txt in enumerate(vert_labels):
 
 plt.show()
 
-print("1. Draw a line segment AB of length 6.5 cm.\n"
+print("1.The point A is taken as origin and a line segment AB = 6.5 cm is drawn along positive x-axis.\n"
      "2. Draw a line segment emerging from B at angle 120 in anticlockwise direction from BA of length 5 cm.\n"
      "3. Name the other endpoint of the line segment as C.\n"
-     "4. Join AC. This completes the traingle ABC.\n"
+     "4. Join AC. This completes the triangle ABC.\n"
      "5. Now take the perpendicular bisector of any two sides, mark their point of intersection as E(centre of circumcircle).\n"
      "6. Taking E as centre and EA=EB=EC as radius draw a circle(circumcircle).\n"
      "7. Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\n"
