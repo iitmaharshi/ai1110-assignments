@@ -180,47 +180,47 @@ columns=fullflexible
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 \numberwithin{table}{enumi}
-\item If  $tan^{-1} a + tan^{-1} b + tan^{-1} c = \pi $ then prove that $ a + b + c = abc $\\
+\item If $\tan^{-1} a + \tan^{-1} b + \tan^{-1} c = \pi$  \\
+then prove that $ a + b + c = abc $\\
 \\
 \solution \\
-We know that $ tan^{-1} x + tan^{-1} y = tan^{-1} (\frac{x + y}{1 - xy}) $\\\\
- $tan^{-1} a = (\frac{\pi}{2} - tan^{-1} b) + (\frac{\pi}{2} - tan^{-1} c) $\\\\
-\begin{align*}
-\therefore tan^{-1} a &= cot^{-1} b + cot^{-1} c \\
+we are given: \\
+\begin{equation}
+\label{eq1}
+\tan^{-1} a + \tan^{-1} b + \tan^{-1} c = \pi
+\end{equation}
+We know that 
+\begin{align}
+\label{eq2}
+\tan^{-1} x + \tan^{-1} y &= \tan^{-1} \brak{\frac{x + y}{1 - xy}} \\ \label{eq3}
+\tan^{-1} x + \cot^{-1} y &= \frac{\pi}{2} \\
+\tan^{-1} x &= \cot^{-1} \frac{1}{x}  \brak{x \neq 0} \label{eq4}
+\end{align}
 \\
-&= tan^{-1} (\frac{1}{b}) + tan^{-1} (\frac{1}{c}) \\
+\eqref{eq1} can be re - written as:\\
 \\
-&= tan^{-1} (\frac{\frac{1}{b} + \frac{1}{c}}{1 - \frac{1}{bc}})
-\end{align*} 
-
-\begin{align*}
+\begin{equation}
+\tan^{-1} a = \brak{\frac{\pi}{2} - \tan^{-1} b} + \brak{\frac{\pi}{2} - \tan^{-1} c}\\
+\end{equation}
+\\
+using \eqref{eq2} ,\eqref{eq3} and \eqref{eq4} :\\
+\begin{align}
+\therefore \tan^{-1} a &= \cot^{-1} b + \cot^{-1} c \\
+&= \tan^{-1} \brak{\frac{1}{b}} + \tan^{-1} \brak{\frac{1}{c}} \\
+&= \tan^{-1} \brak{\frac{\frac{1}{b} + \frac{1}{c}}{1 - \frac{1}{bc}}}\\
 \therefore a &= \frac{\frac{1}{b} + \frac{1}{c}}{1 - \frac{1}{bc}}\\
-\\
 &= \frac{\frac{b + c}{bc}}{\frac{bc - 1}{bc}}\\
-\\
-&= \frac{b+c}{bc-1}\\
-\end{align*}
-\\
+&= \frac{b+c}{bc-1}
+\end{align}
 \\
 \\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-Now, cross multiplying
 
-\begin{align*}
+Now, cross multiplying\\
+\begin{align}
 a(bc - 1) &= b + c \\
-\\
-\therefore abc - a &= b + c\\
-\\
-\therefore abc &= a + b + c\\
-\end{align*}
+\implies abc - a &= b + c\\
+\implies abc &= a + b + c
+\end{align}
 
 HENCE PROVED
 \end{enumerate}
