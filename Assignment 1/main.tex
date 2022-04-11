@@ -175,48 +175,53 @@ columns=fullflexible
 \numberwithin{equation}{section}
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
-\section{Q8 c)}
+\section{Q3}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
 \numberwithin{table}{enumi}
-\item Using ruler and compass only, construct a $\bigtriangleup$ABC such that BC = 5 cm
-and AB = 6.5 cm and $\angle$ABC = 120°\\
-(i) Construct a circum-circle of $\bigtriangleup$ABC\\
-(ii) Construct a cyclic quadrilateral ABCD, such that D is equidistant from AB and BC.\\
-
-\solution Steps of construction:\\
-1. Draw a line segment AB of length 6.5 cm.\\
-2. Draw a line segment emerging from B at angle 120 in anticlockwise direction from BA of length 5 cm.\\
-3. Name the other endpoint of the line segment as C.\\
-4. Join AC. This completes the traingle ABC.\\
-5. Now take the perpendicular bisector of any two sides, mark their point of intersection as E(centre of circumcircle).\\
-6. Taking E as centre and EA=EB=EC as radius draw a circle(circumcircle).\\
-7. Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\\
-8. Join AD and CD.\\
-
-(i)\ref{fig1}
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width = \columnwidth]{fig1.png}\\
-\caption{}
-\label{fig1}
-\end{center}
-\end{figure}
+\item If $\tan^{-1} a + \tan^{-1} b + \tan^{-1} c = \pi$  \\
+then prove that $ a + b + c = abc $\\
 \\
-center of the circumcircle is the point of intersection of the perpendicular bisectors of AB and BC.\\
-
-(ii)\ref{fig2}
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width = \columnwidth]{fig2.png}\\
-\caption{}
-\label{fig2}
-\end{center}
-\end{figure}
+\solution \\
+we are given: \\
+\begin{equation}
+\label{eq1}
+\tan^{-1} a + \tan^{-1} b + \tan^{-1} c = \pi
+\end{equation}
+We know that 
+\begin{align}
+\label{eq2}
+\tan^{-1} x + \tan^{-1} y &= \tan^{-1} \brak{\frac{x + y}{1 - xy}} \\ \label{eq3}
+\tan^{-1} x + \cot^{-1} y &= \frac{\pi}{2} \\
+\tan^{-1} x &= \cot^{-1} \frac{1}{x}  \brak{x \neq 0} \label{eq4}
+\end{align}
 \\
-the point D of the cyclic quadrilateral ABCD is the point of intersection of the angle 
-bisectors of AB and BC and the circumcircle.
+\eqref{eq1} can be re - written as:\\
+\\
+\begin{equation}
+\tan^{-1} a = \brak{\frac{\pi}{2} - \tan^{-1} b} + \brak{\frac{\pi}{2} - \tan^{-1} c}\\
+\end{equation}
+\\
+using \eqref{eq2} ,\eqref{eq3} and \eqref{eq4} :\\
+\begin{align}
+\therefore \tan^{-1} a &= \cot^{-1} b + \cot^{-1} c \\
+&= \tan^{-1} \brak{\frac{1}{b}} + \tan^{-1} \brak{\frac{1}{c}} \\
+&= \tan^{-1} \brak{\frac{\frac{1}{b} + \frac{1}{c}}{1 - \frac{1}{bc}}}\\
+\therefore a &= \frac{\frac{1}{b} + \frac{1}{c}}{1 - \frac{1}{bc}}\\
+&= \frac{\frac{b + c}{bc}}{\frac{bc - 1}{bc}}\\
+&= \frac{b+c}{bc-1}
+\end{align}
+\\
+\\
+
+Now, cross multiplying\\
+\begin{align}
+a(bc - 1) &= b + c \\
+\implies abc - a &= b + c\\
+\implies abc &= a + b + c
+\end{align}
+
+HENCE PROVED
 \end{enumerate}
-
 \end{document}
