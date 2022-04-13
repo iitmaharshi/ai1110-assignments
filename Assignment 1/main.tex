@@ -194,7 +194,33 @@ and AB = 6.5 cm and $\angle$ABC = 120°\\
 \label{TABLE}
 \end{table}
 
-Steps of construction:\\
+\textbf{Deriving the coordinates of C,D,E and the radius r:}\\
+
+X-coordinate of any point is the perpendicular distance\brak{algebraic} of point from Y-axis\\
+Y-coordinate of any point is the perpendicular distance\brak{algebraic} of point from X-axis\\
+Let foot of perpendicular from C to X-axis be F and C = \myvec{X_c \\ Y_c}\\
+$X_c=AB+BF$ and $Y_c = CF$\\
+from trigonometry $BF = BC\cos \theta = a*\cos \theta$ and $CF = BC\sin \theta = a*\sin \theta$ \\
+$X_c = c + a*\cos \theta$ and $Y_c = a*\sin \theta$ \\ 
+$\therefore C = \myvec{c + a\cos \theta \\ a\sin \theta} $\\
+Let E = \myvec{X_E \\ Y_E} and foot of perpendicular from E to X-axis be G.
+Using the fact that angle subtended by a chord at any point of the circle is half of that subtended at the centre,
+$\angle AEB = 2\alpha$ \\
+Since E is centre of circumcircle, EA = EB and hence $\bigtriangleup$AEB is isoceles by which we conclude that $\angle AEG = \angle BEG = \alpha$
+Using trigonometry in $\bigtriangleup$AEG
+$X_E=c/2$, $\cot \alpha = \frac{Y_E}{X_E}$ and $\cosec \alpha = \frac{r}{X_E}$, \\
+$Y_E=\brak{c/2}\cot \alpha $\\ 
+$\therefore E = \myvec{c/2 \\ \brak{c/2}\cot \alpha} $ and $r=\frac{c}{2\sin \alpha} $\\
+Let D = \myvec{X_D \\ Y_D} and foot of perpendicular from D to X-axis be H,
+and given that AD=l\\
+From geometry $\angle DAB = 2\theta-\alpha$,
+Using trigonometry in $\bigtriangleup$ADH, 
+$AH=X_D=l\cos \brak{2\theta-\alpha}$and $DH=Y_D=l\sin \brak{2\theta-\alpha}$
+$\therefore D = l*\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha}} $\\
+\\
+\\
+\textbf{Steps of construction}:\\
+
 1. The point A is taken as origin and a line segment AB = 6.5 cm is drawn along positive x-axis.\\
 
 2. Draw a line segment emerging from B at $\angle$120° in anticlockwise direction from BA of length 5 cm.\\
@@ -215,17 +241,15 @@ Steps of construction:\\
 center of the circumcircle is the point of intersection of the perpendicular bisectors of AB and BC.
 \begin{figure}[h!]
 \centering
-\includegraphics[width = \columnwidth]{fig1.png}\\
+\includegraphics[width = \columnwidth]{fig1.png}
 \caption{}
 \label{fig1}
 \end{figure}
 
-\pagebreak
-
 (ii)\ref{fig2} \\
 the point D of the cyclic quadrilateral ABCD is the point of intersection of the angle 
 bisectors of AB and BC and the circumcircle.
-\begin{figure}[h!]
+\begin{figure}[t!]
 \centering
 \includegraphics[width = \columnwidth]{fig2.png}\\
 \caption{}
