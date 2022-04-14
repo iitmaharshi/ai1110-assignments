@@ -191,18 +191,19 @@ and AB = 6.5 cm and $\angle$ABC = 120°\\
 \centering
 \caption{}
 \input{tables/table_1.tex} 	
-\label{TABLE}
 \end{table}
 
 \textbf{Deriving the coordinates of C,D,E and the radius r:}\\
 
 X-coordinate of any point is the perpendicular distance\brak{algebraic} of point from Y-axis\\
 Y-coordinate of any point is the perpendicular distance\brak{algebraic} of point from X-axis\\
+
 Let foot of perpendicular from C to X-axis be F and C = \myvec{X_c \\ Y_c}\\
 $X_c=AB+BF$ and $Y_c = CF$\\
 from trigonometry $BF = BC\cos \theta = a*\cos \theta$ and $CF = BC\sin \theta = a*\sin \theta$ \\
 $X_c = c + a*\cos \theta$ and $Y_c = a*\sin \theta$ \\ 
 $\therefore C = \myvec{c + a\cos \theta \\ a\sin \theta} $\\
+Using Sine rule in $\bigtriangleup$ABC, we find $\alpha$\\
 Let E = \myvec{X_E \\ Y_E} and foot of perpendicular from E to X-axis be G.
 Using the fact that angle subtended by a chord at any point of the circle is half of that subtended at the centre,
 $\angle AEB = 2\alpha$ \\
@@ -211,6 +212,7 @@ Using trigonometry in $\bigtriangleup$AEG
 $X_E=c/2$, $\cot \alpha = \frac{Y_E}{X_E}$ and $\cosec \alpha = \frac{r}{X_E}$, \\
 $Y_E=\brak{c/2}\cot \alpha $\\ 
 $\therefore E = \myvec{c/2 \\ \brak{c/2}\cot \alpha} $ and $r=\frac{c}{2\sin \alpha} $\\
+$l$ is found by applying sine rule in $\bigtriangleup$ADB\\
 Let D = \myvec{X_D \\ Y_D} and foot of perpendicular from D to X-axis be H,
 and given that AD=l\\
 From geometry $\angle DAB = 2\theta-\alpha$,
@@ -218,7 +220,13 @@ Using trigonometry in $\bigtriangleup$ADH,
 $AH=X_D=l\cos \brak{2\theta-\alpha}$and $DH=Y_D=l\sin \brak{2\theta-\alpha}$
 $\therefore D = l*\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha}} $\\
 \\
-\\
+\textbf{Table for Output parameters:}
+\begin{table}[h]
+\centering
+\caption{}
+\input{tables/table_2.tex} 	
+\end{table}
+
 \textbf{Steps of construction}:\\
 
 1. The point A is taken as origin and a line segment AB = 6.5 cm is drawn along positive x-axis.\\
@@ -236,6 +244,7 @@ $\therefore D = l*\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha
 7. Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\\
 
 8. Join AD and CD.\\
+
 
 (i)\ref{fig1} \\
 center of the circumcircle is the point of intersection of the perpendicular bisectors of AB and BC.
