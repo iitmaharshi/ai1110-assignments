@@ -47,18 +47,18 @@ l = 6.5*3**0.5/(2*mp.sin(alpha))
 A = np.array(([0,0]))
 B = c*e1
 C = np.array(([6.5+a*mp.cos(theta),a*mp.sin(theta)]),dtype = 'float64')
-E,r = ccircle(A,B,C)
+O,r = ccircle(A,B,C)
 D = l*np.array((mp.cos(2*np.pi/3 - alpha),mp.sin(2*np.pi/3 - alpha)),dtype = 'float64')
 
 
 x_AB = line_gen(A,B)
 x_BC = line_gen(B,C)
 x_CA = line_gen(C,A)
-x_circ = circ_gen(E,r)
+x_circ = circ_gen(O,r)
 x_AD = line_gen(A,D)
 x_CD = line_gen(C,D)
 
-
+plt.axis('off')
 plt.plot(x_AB[0,:], x_AB[1,:], 'k')
 plt.plot(x_BC[0,:], x_BC[1,:], 'k')
 plt.plot(x_CA[0,:], x_CA[1,:], 'k')
@@ -66,9 +66,9 @@ plt.plot(x_circ[0,:],x_circ[1,:],'k')
 plt.plot(x_AD[0,:], x_AD[1,:], 'k')
 plt.plot(x_CD[0,:], x_CD[1,:], 'k')
 
-tri_coords = np.vstack((A,B,C,E,D)).T
+tri_coords = np.vstack((A,B,C,O,D)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['A','B','C','E','D']
+vert_labels = ['A','B','C','O','D']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
