@@ -193,33 +193,40 @@ and AB = 6.5 cm and $\angle$ABC = 120°\\
 \input{tables/table_1.tex} 	
 \end{table}
 
-\textbf{Deriving the coordinates of C,D,E and the radius r:}\\
+\textbf{Deriving the coordinates of C,D,O(centre of circumcircle) and its radius r:}\\
 
 X-coordinate of any point is the perpendicular distance\brak{algebraic} of point from Y-axis\\
 Y-coordinate of any point is the perpendicular distance\brak{algebraic} of point from X-axis\\
 
 Let foot of perpendicular from C to X-axis be F and C = \myvec{X_c \\ Y_c}\\
 $X_c=AB+BF$ and $Y_c = CF$\\
-from trigonometry $BF = BC\cos \theta = a*\cos \theta$ and $CF = BC\sin \theta = a*\sin \theta$ \\
-$X_c = c + a*\cos \theta$ and $Y_c = a*\sin \theta$ \\ 
+from trigonometry $BF = BC\cos \theta = a\cos \theta$ and $CF = BC\sin \theta = a\sin \theta$ \\
+$X_c = c + a\cos \theta$ and $Y_c = a\sin \theta$ \\ 
 $\therefore C = \myvec{c + a\cos \theta \\ a\sin \theta} $\\
 Using Sine rule in $\bigtriangleup$ABC, we find $\alpha$\\
-Let E = \myvec{X_E \\ Y_E} and foot of perpendicular from E to X-axis be G.
-Using the fact that angle subtended by a chord at any point of the circle is half of that subtended at the centre,
-$\angle AEB = 2\alpha$ \\
-Since E is centre of circumcircle, EA = EB and hence $\bigtriangleup$AEB is isoceles by which we conclude that $\angle AEG = \angle BEG = \alpha$
-Using trigonometry in $\bigtriangleup$AEG
-$X_E=c/2$, $\cot \alpha = \frac{Y_E}{X_E}$ and $\cosec \alpha = \frac{r}{X_E}$, \\
-$Y_E=\brak{c/2}\cot \alpha $\\ 
-$\therefore E = \myvec{c/2 \\ \brak{c/2}\cot \alpha} $ and $r=\frac{c}{2\sin \alpha} $\\
+Let O = \myvec{X_O \\ Y_O} and foot of perpendicular from O to X-axis be G.\\
+Since O is the circumcentre, OA=OB=OC\\
+\begin{align}
+\therefore \norm{\vec{O} - \vec{A}} = \norm{\vec{O} - \vec{B}} = \norm{\vec{O} - \vec{C}}\\
+\implies \norm{\vec{O} - \vec{A}}^{2} = \norm{\vec{O} - \vec{B}}^{2} = \norm{\vec{O} - \vec{C}}^{2}\\
+\implies \norm{\vec{O}^{2}} = \norm{\vec{O}^{2}} - 2\vec{B}^{T}\vec{O} + \norm{\vec{B}^{2}}\\ 
+and \norm{\vec{O}^{2}} = \norm{\vec{O}^{2}} - 2\vec{C}^{T}\vec{O} + \norm{\vec{C}^{2}}\\
+\implies \norm{\vec{B}^{2}} = 2\vec{B}^{T}\vec{O}, \norm{\vec{C}^{2}} = 2\vec{C}^{T}\vec{O}\\
+\end{align}
+Taking $\vec{O} = \myvec{X_O \\ Y_O}$, putting values of $\vec{B}$,$\vec{C}$ and solving,we get,\\
+$\vec{O} = \myvec{c/2 \\ \brak{c/2} \cot \alpha} $ \\
+Using $\vec{O}$, we get radius r = $\norm{\vec{O}}$\\
+r = $\frac{c}{2\sin \alpha}$\\
+\\
 $l$ is found by applying sine rule in $\bigtriangleup$ADB\\
 Let D = \myvec{X_D \\ Y_D} and foot of perpendicular from D to X-axis be H,
 and given that AD=l\\
 From geometry $\angle DAB = 2\theta-\alpha$,
 Using trigonometry in $\bigtriangleup$ADH, 
 $AH=X_D=l\cos \brak{2\theta-\alpha}$and $DH=Y_D=l\sin \brak{2\theta-\alpha}$
-$\therefore D = l*\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha}} $\\
+$\therefore D = l\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha}} $\\
 \\
+
 \textbf{Table for Output parameters:}
 \begin{table}[h]
 \centering
@@ -228,42 +235,43 @@ $\therefore D = l*\myvec{\cos \brak{2\theta-\alpha} \\ \sin \brak{2\theta-\alpha
 \end{table}
 
 \textbf{Steps of construction}:\\
-
-1. The point A is taken as origin and a line segment AB = 6.5 cm is drawn along positive x-axis.\\
-
-2. Draw a line segment emerging from B at $\angle$120° in anticlockwise direction from BA of length 5 cm.\\
-
-3. Name the other endpoint of the line segment as C.\\
-
-4. Join AC. This completes the $\bigtriangleup$ABC.\\
-
-5. Now take the perpendicular bisector of any two sides, mark their point of intersection as E(centre of circumcircle).\\
-
-6. Taking E as centre and EA=EB=EC as radius draw a circle(circumcircle).\\
-
-7. Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\\
-
-8. Join AD and CD.\\
-
+\begin{enumerate}
+\item
+The point A is taken as origin and a line segment AB = 6.5 cm is drawn along positive x-axis.\\
+\item
+Draw a line segment emerging from B at $\angle$120° in anticlockwise direction from BA of length 5 cm.\\
+\item
+Name the other endpoint of the line segment as C.\\
+\item
+Join AC. This completes the $\bigtriangleup$ABC.\\
+\item
+Now take the perpendicular bisector of any two sides, mark their point of intersection as E(centre of circumcircle).\\
+\item
+Taking E as centre and EA=EB=EC as radius draw a circle(circumcircle).\\
+\item
+Take internal angle bisector of AB and BC, let its point of intersection with the circumcircle be D.\\
+\item
+Join AD and CD.\\
+\end{enumerate}
 
 (i)\ref{fig1} \\
-center of the circumcircle is the point of intersection of the perpendicular bisectors of AB and BC.
 \begin{figure}[h!]
 \centering
 \includegraphics[width = \columnwidth]{fig1.png}
 \caption{}
 \label{fig1}
 \end{figure}
+center of the circumcircle is the point of intersection of the perpendicular bisectors of AB and BC.\\
 
 (ii)\ref{fig2} \\
-the point D of the cyclic quadrilateral ABCD is the point of intersection of the angle 
-bisectors of AB and BC and the circumcircle.
-\begin{figure}[t!]
+\begin{figure}[h!]
 \centering
 \includegraphics[width = \columnwidth]{fig2.png}\\
 \caption{}
 \label{fig2}
 \end{figure}
+the point D of the cyclic quadrilateral ABCD is the point of intersection of the angle 
+bisectors of AB and BC and the circumcircle.
 \\
 
 \end{enumerate}
