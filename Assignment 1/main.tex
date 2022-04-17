@@ -208,13 +208,19 @@ Let O = \myvec{X_O \\ Y_O} and foot of perpendicular from O to X-axis be G.\\
 Since O is the circumcentre, OA=OB=OC\\
 \begin{align}
 \therefore \norm{\vec{O} - \vec{A}} = \norm{\vec{O} - \vec{B}} = \norm{\vec{O} - \vec{C}}\\
-\implies \norm{\vec{O} - \vec{A}}^{2} = \norm{\vec{O} - \vec{B}}^{2} = \norm{\vec{O} - \vec{C}}^{2}\\
-\implies \norm{\vec{O}^{2}} = \norm{\vec{O}^{2}} - 2\vec{B}^{T}\vec{O} + \norm{\vec{B}^{2}}\\ 
-and \norm{\vec{O}^{2}} = \norm{\vec{O}^{2}} - 2\vec{C}^{T}\vec{O} + \norm{\vec{C}^{2}}\\
-\implies \norm{\vec{B}^{2}} = 2\vec{B}^{T}\vec{O}, \norm{\vec{C}^{2}} = 2\vec{C}^{T}\vec{O}
+\implies \norm{\vec{O} - \vec{A}}^{2} = \norm{\vec{O} - \vec{B}}^{2} = \norm{\vec{O} - \vec{C}}^{2}
+\end{align}
+\begin{align}
+\implies \norm{\vec{O}^{2}} &= \norm{\vec{O}^{2}} - 2\vec{B}^{T}\vec{O} + \norm{\vec{B}^{2}}\\ 
+and \norm{\vec{O}^{2}} &= \norm{\vec{O}^{2}} - 2\vec{C}^{T}\vec{O} + \norm{\vec{C}^{2}}\\
+\implies \norm{\vec{B}^{2}} &= 2\vec{B}^{T}\vec{O}, \norm{\vec{C}^{2}} = 2\vec{C}^{T}\vec{O}
+\end{align}
+Putting values of $\vec{B}$,$\vec{C}$ and solving,we get,\\
+\begin{align}
+c^{2}&=2\myvec{c & 0}\myvec{X_O \\ Y_O} and \\
+a^{2}+c^{2}+2ac\cos \theta&=2\myvec{c + a\cos \theta & a\sin \theta}\myvec{X_O \\ Y_O}
 \end{align}
 
-Taking $\vec{O} = \myvec{X_O \\ Y_O}$, putting values of $\vec{B}$,$\vec{C}$ and solving,we get,\\
 $\vec{O} = \myvec{c/2 \\ \brak{c/2} \cot \alpha} $ \\
 Using $\vec{O}$, we get radius r = $\norm{\vec{O}}$\\
 r = $\frac{c}{2\sin \alpha}$\\
