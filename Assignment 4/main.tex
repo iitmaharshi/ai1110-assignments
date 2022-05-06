@@ -188,38 +188,37 @@ This section provides the solution to Q24 of EX 15.1 in CBSE class 10th NCERT te
 (ii) 5 will come up at least once?\\
 
 \solution \\
-
-Let X$\in\lbrace1,2,3,4,5,6\rbrace$ be a random variable representing the number obtained on the first throw of the dice.\\
-Similarly, Let Y$\in\lbrace1,2,3,4,5,6\rbrace$ be a random variable representing the number obtained on the second throw of the dice.\\
-For our case X is independent of Y.
-\begin{table}[h!]
-\centering
-\caption{}
-\input{tables/table.tex}
-\label{Table1}
-\end{table}
-
-(i)\\
-we are required to find P\brak{\brak{X != 5}\cap\brak{Y != 5}}\\
-we know by Conditional probability that:\\
+5 appearing on the dice is treated as success with probability $p = \frac{1}{6}$ and 5 not appearing on the dice is treated as failure with probability $q = \frac{5}{6}$\\
+Here we have done 2 trials, so \textbf{n = 2}.\\
+Let $X \in \lbrace 0,1,2 \rbrace$ be the random variable representing the number of $5_{s}$ appeared after both the trials\\
+X = 0 : zero $5_{s}$\\
+X = 1 : exactly one 5\\
+X = 2 : exactly two $5_{s}$\\
+By bernoulli distribution,
 \begin{align}
-P\brak{A\cap B} &= P(A|B)\times P(B)\\
-\\
-Let: P &= P\brak{\brak{X!=5}\cap\brak{Y!=5}}\\ \label{eq1}
-\implies P &= P\brak{X!=5} \times P\brak{Y!=5}\\
-\implies P &= \brak{1 - P\brak{X = 5}}\brak{1 - P\brak{Y = 5}}
+P\brak{X=r} = {n\choose r} \times p^{r} \times q^{n-r}
 \end{align}
-Inputting values in \eqref{eq1} from the table:
+Probability that no 5 appears\brak{say P_{1}} :
 \begin{align}
-P &= \brak{1 - \frac{1}{6}}\brak{1 - \frac{1}{6}}\\
-\implies P &= \frac{25}{36}
+P_{1}&= P\brak{X=0}\\
+&= {n\choose 0} \times p^0 \times q^2\\
+&= \brak{\frac{5}{6}}^2\\
+&= \frac{25}{36}
 \end{align}
-(ii)\\
-Since the event M(say) = "not getting 5 on either throw of dice" and event N(say) = "getting atleast one 5" are exhaustive events:\\
+Probability that atleast one 5 appears\brak{say P_{2}} :
 \begin{align}
-P\brak{M} + P\brak{N} &= 1\\
-\implies P\brak{N} &= 1 - P\brak{M}\\
-\therefore P\brak{N} &= \frac{11}{36}
+P_{2}&= P\brak{X=1} + P\brak{X=2}\\
+&= {n\choose 1} \times p^1 \times q^1 + {n\choose 2} \times p^2 \times q^0\\
+&= \frac{10}{36} + \frac{1}{36}\\
+&= \frac{11}{36}
+\end{align}
+\textbf{ALTERNATE METHOD:}
+we know that,since the events are exhaustive and exclusive
+\begin{align}
+P_{1} + P_{2} &= 1\\
+\implies P_{2} &= 1 - P_{1}\\
+\implies P_{2} &= 1 - \frac{25}{36}\\
+\implies P_{2} &= \frac{11}{36}
 \end{align}
 \end{enumerate}
 
