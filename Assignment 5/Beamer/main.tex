@@ -1,1 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Probability class 12} 
+\author{Maharshi Kadeval}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+% problem frame
+\section{Problem statement}
+\begin{frame}{Problem statement}
+\begin{enumerate}
+\item Given three identical boxes I, II and III, each containing two coins. In
+box I, both coins are gold coins, in box II, both are silver coins and in the box III, there
+is one gold and one silver coin. A person chooses a box at random and takes out a coin.
+If the coin is of gold, what is the probability that the other coin in the box is also of gold?\\
+\end{enumerate}
+
+\end{frame}
+
+
+% solution frame
+\section{Solution}
+\begin{frame}{Solution}
+    Let $X_{1} \in \lbrace 1,2,3 \rbrace$ and $X_{2} \in \lbrace 0,1 \rbrace$ be random variables which have the following meanings associated with them :\\
+\begin{block}{description of events}
+$X_{1} = 1$ : Bag 1 is selected\\
+$X_{1} = 2$ : Bag 2 is selected\\
+$X_{1} = 3$ : Bag 3 is selected\\
+$X_{2} = 0$ : gold coin is selected\\
+$X_{2} = 1$ : silver coin is selected\\
+
+\end{block}
+Therefore,the required probability is $P\brak{X_{1}=1|X_{2}=0}$.\\
+
+\end{frame}
+ \begin{frame}
+ By Baye's Theorem and total probability,\\
+
+
+\begin{align}
+P\brak{X_{1}=1|X_{2}=0}&= \frac{P\brak{X_{1}=1} P\brak{X_{2}=0|X_{1}=1}}{\Sigma^{3}_{i=1} P\brak{X_{1}=i}P\brak{X_{2}=0|X_{1}=i}}\\
+&= \frac{\frac{1}{3} \times 1}{\frac{1}{3} \times 1 + \frac{1}{3} \times 0 + \frac{1}{3} \times \frac{1}{2} }\\
+&= \frac{2}{3}\\
+\therefore P\brak{X_{1}=1|X_{2}=0} &= \frac{2}{3}
+\end{align}
+
+ \end{frame}
+ 
+
+
+\end{document}
