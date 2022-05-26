@@ -1,1 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you open the
+% 'Share' menu, you can invite other users to edit at the same
+% time. See www.overleaf.com/learn for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Probability class 12} 
+\author{Maharshi Kadeval}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+% problem frame
+\section{Problem statement}
+\begin{frame}{Problem statement}
+\begin{enumerate}
+\item if $y = \sqrt{X}$ and X is an exponential random variable, show that Y represents a Rayleigh random variable\\
+\end{enumerate}
+
+\end{frame}
+\section{Solution}
+\begin{frame}{Solution}
+
+X has a probability density function:
+\begin{align}
+f_X\brak{x} &= \frac{1}{\alpha} e^{-\frac{x}{\alpha}}
+\end{align}
+The transformation $Y = g\brak{X} = \sqrt{X}$ is a 1-1 transformation from $X = \lbrace x|x>0 \rbrace$ to $Y = \lbrace y|y>0 \rbrace$ with inverse $X = g^{-1}\brak{Y} = Y^{2}$ \\
+and jacobian $\frac{dX}{dY} = 2Y$\\
+\end{frame}
+\begin{frame}
+Therefore by the transformation technique, the probability density function of Y is:
+\begin{align}
+f_Y\brak{y} &= f_X\brak{g^{-1}\brak{y}} \bigg | \frac{dX}{dY} \bigg | \\
+&= \frac{1}{\alpha} e^{-\frac{y^{2}}{\alpha}} |2y|\\
+&= \frac{2y}{\alpha} e^{-\frac{y^{2}}{\alpha}} 
+\brak{y>0} 
+\end{align}
+
+which is the probability density function of a Rayleigh random variable\\
+\begin{center}
+Hence Proved
+\end{center}
+
+\end{frame}
+\end{document}
